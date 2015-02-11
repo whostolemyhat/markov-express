@@ -1,5 +1,8 @@
 running express on webfaction
 
+Install node:
+https://gist.github.com/marcoslhc/3909289
+
 1. Log into dashboard
 2. Create Node app. Make a note of the port it's running on.
 4. On local machine, install Express generator `npm install -g express-generator` `express app`
