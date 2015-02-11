@@ -10,5 +10,7 @@ http://docs.webfaction.com/software/git.html#pushing-and-pulling-with-a-reposito
 7. SSH into server. cd to your node app. edit bin/start to point to your files (/app).
 8. Follow these steps to make sure NPM is aliased in the path: http://docs.webfaction.com/software/nodejs.html#installing-packages-with-npm
 9. Install forever `npm install -g forever`
-10. Run your app using forever: `forever start app/bin/www`
+10. Run your app using forever: `forever start -a -o log/out.log -e log/error.log --uid "production" app/bin/www`
+    uid = id. can use to stop ie `forever stop production`
+    API here: https://github.com/foreverjs/forever
 11. Visit your site - should be working! 502 Bad Gateway means you are using the wrong port or the server isn't running. You can now update the app's files by changing locally, commiting to git then pushing to web.
