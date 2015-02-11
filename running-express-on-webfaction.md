@@ -18,4 +18,5 @@ http://docs.webfaction.com/software/git.html#pushing-and-pulling-with-a-reposito
     API here: https://github.com/foreverjs/forever
     modify the nodeapp/bin/start and stop files to replace them with forever commands
     update your post-receive file to run the bin/start and stop commands to refresh your app
+    http://blog.tyrsius.com/webfaction-git-deploy/
 11. Visit your site - should be working! 502 Bad Gateway means you are using the wrong port or the server isn't running. You can now update the app's files by changing locally, commiting to git then pushing to web.
